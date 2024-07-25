@@ -21,3 +21,5 @@ spec:
     automated:
       selfHeal: true
       prune: true
+      #sudo kubectl port-forward svc/myapp-service -n dev 8888:8888
+      #sudo kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 --decode
